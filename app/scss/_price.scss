@@ -1,0 +1,123 @@
+.price {
+    padding-top: 85px;
+    padding-bottom: 91px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    &__item {
+        max-width: 420px;
+        flex-basis: 100%;
+        padding: 15px;
+        display: flex;
+        @media (min-width: 600px) {
+            flex-basis: 50%;
+        }
+        @media (min-width: 1200px) {
+            flex-basis: calc(100% / 3);
+        }
+    }
+    &__box {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 9px 50px 0px rgba(0, 0, 0, 0.1);
+        background-color: $white;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        @extend %transition-hover;
+        &:hover {
+            box-shadow: 15px 15px 20px 10px rgba(0, 0, 0, 0.4);
+        }
+    }
+    &__sum {
+        background-color: $main-color;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        color: $light-text;
+        margin-bottom: 20px;
+        padding: 30px 10px 30px;
+        @media (min-width: 480px) {
+            margin-bottom: 25px;
+            padding: 27px 10px 30px 36px;
+        }
+    }
+    &__money {
+        @extend %open-bold;
+        font-size: 32px;
+        margin-right: 10px;
+        align-self: center;
+        @media (min-width: 480px) {
+            margin-right: 20px;
+        }
+    }
+    &__value {
+        @extend %open-bold;
+        font-size: 60px;
+        @media (min-width: 480px) {
+            font-size: 68px;
+        }
+    }
+    &__period {
+        text-transform: uppercase;
+        font-size: 18px;
+        padding-left: 4px;
+        &::before {
+            content: ' / ';
+        }
+    }
+    &__list {
+        max-width: 400px;
+        margin: 0 auto 25px;
+    }
+    &__info {
+        text-transform: uppercase;
+        text-align: left;
+        width: 100%;
+        position: relative;
+        font-size: 16px;
+        padding: 17px 10px;
+        @media (min-width: 480px) {
+            padding: 23px 10px 20px;
+            font-size: 18px;
+        }
+    }
+    &__info+.price__info {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+            height: 1px;
+            width: 99px;
+            background-color: $price-line;
+        }
+    }
+    &__btn {
+        padding: 14px 40px;
+        color: $light-text;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $main-color;
+        margin-bottom: 52px;
+        border-radius: 20px;
+        font-size: 18px;
+        @extend %open-semi;
+        @extend %transition-hover;
+        @media (min-width: 480px) {
+            padding: 13px 47px;
+        }
+        &:hover {
+            box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.26);
+        }
+    }
+}

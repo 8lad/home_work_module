@@ -1,0 +1,257 @@
+doctype html
+html(lang="zxx")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="css/style.min.css")
+        link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
+        title Yoga
+    body
+        .wrapper
+            header.header
+                .container
+                    .header__inner
+                        a.header__logo(href="#")
+                            img(src="images/logo.png", alt="logo")
+                        input#header__checkbox(type="checkbox")
+                        label.header__btn(for="header__checkbox")
+                            span
+                        nav.header__menu
+                            ul.header__list
+                                li.header__item
+                                    a.header__link(href="#") About us
+                                li.header__item
+                                    a.header__link(href="#") Reservation
+                                li.header__item
+                                    a.header__link(href="#") Gallery
+                                li.header__item
+                                    a.header__link(href="#") Blog
+                                li.header__item
+                                    a.header__link(href="#") Elements
+                                li.header__item
+                                    a.header__link(href="#") Shop
+
+            main.main
+                section.presentation(style="background-image: url(images/presentation-bg.jpg)")
+                    .container
+                        .presentation__inner
+                            .presentation__feedback
+                                .presentation__offer Trial Class
+                                form.presentation__form
+                                    input.presentation__input(type="text", name="name" placeholder="Enter your name")
+                                    input.presentation__input(type="tel", name="tel" placeholder="Enter your phone")
+                                    select.presentation__input.presentation__select
+                                        option(selected="selected") Chose your class
+                                        option(value="Beginner") Beginner
+                                        option(value="Middle") Middle
+                                        option(value="Advanced") Advanced
+                                button.presentation__btn(type="submit") Try it
+                            .presentation__info
+                                h1.presentation__title Just Balance your Mind & Body
+                                .presentation__subtitle Create the healthy living for yourself
+                section.program
+                    .container
+                        h2.section-title Yoga FEATURE PROGRAM
+                        .section-subtitle Our Claasses
+                        .program__inner
+                            .program__item
+                                .program__box
+                                    .program__img
+                                        img(src="images/program-1.jpg", alt="program img")
+                                    .program__info
+                                        h4.program__topic Yoga For Health
+                                        p.program__text Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.program__name(href="#") Ashtanga - Hatha
+                            .program__item
+                                .program__box
+                                    .program__img
+                                        img(src="images/program-2.jpg", alt="program img")
+                                    .program__info
+                                        h4.program__topic Yoga For Lose Weight
+                                        p.program__text Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.program__name(href="#") Ashtanga - Hatha
+                            .program__item
+                                .program__box
+                                    .program__img
+                                        img(src="images/program-3.jpg", alt="program img")
+                                    .program__info
+                                        h4.program__topic Yoga For Children
+                                        p.program__text Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.program__name(href="#") Ashtanga - Hatha
+                            .program__item
+                                .program__box
+                                    .program__img
+                                        img(src="images/program-4.jpg", alt="program img")
+                                    .program__info
+                                        h4.program__topic Yoga For Elderly
+                                        p.program__text Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                                        a.program__name(href="#") Ashtanga - Hatha
+                section.gallery
+                    .gallery__inner
+                        .gallery__item
+                            img.gallery__img(src="images/gallery-1.jpg", alt="gallery image")
+                            .gallery__zoom
+                                span.icon-search
+                        .gallery__item
+                            img.gallery__img(src="images/gallery-2.jpg", alt="gallery image")
+                            .gallery__zoom
+                                span.icon-search
+                        .gallery__item
+                            img.gallery__img(src="images/gallery-3.jpg", alt="gallery image")
+                            .gallery__zoom
+                                span.icon-search
+                        .gallery__item
+                            img.gallery__img(src="images/gallery-4.jpg", alt="gallery image")
+                            .gallery__zoom
+                                span.icon-search
+                        .gallery__item
+                            img.gallery__img(src="images/gallery-5.jpg", alt="gallery image")
+                            .gallery__zoom
+                                span.icon-search
+                        .gallery__item
+                            img.gallery__img(src="images/gallery-6.jpg", alt="gallery image")
+                            .gallery__zoom
+                                span.icon-search
+                        .gallery__item
+                            img.gallery__img(src="images/gallery-7.jpg", alt="gallery image")
+                            .gallery__zoom
+                                span.icon-search
+                        .gallery__item
+                            img.gallery__img(src="images/gallery-8.jpg", alt="gallery image")
+                            .gallery__zoom
+                                span.icon-search
+                section.about
+                    .container
+                        .about__inner
+                            .about__info
+                                h2.section-title.about__title About us
+                                p.about__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.
+                            .about__slider
+                                .swiper
+                                    .swiper-container
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                img(src="images/slider.jpg", alt="slider image")
+                                            .swiper-slide
+                                                img(src="images/slider.jpg", alt="slider image")
+                                            .swiper-slide
+                                                img(src="images/slider.jpg", alt="slider image")
+                                        .swiper-button-prev
+                                            span
+                                        .swiper-button-next
+                                            span
+                section.results(style="background-image: url(images/results-bg.jpg)")
+                    .container
+                        .results__inner
+                            .results__item
+                                .results__box
+                                    .results__img(style="background-image: url(images/results-1.png)")
+                                    h4.results__title IMPROVED OVERALL HEALTH
+                                    p.results__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+                            .results__item
+                                .results__box
+                                    .results__img(style="background-image: url(images/results-2.png)")
+                                    h4.results__title INCREASED CONCENTRATION
+                                    p.results__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+                            .results__item
+                                .results__box
+                                    .results__img(style="background-image: url(images/results-3.png)")
+                                    h4.results__title BLANCE YOUR MIND
+                                    p.results__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+                            .results__item
+                                .results__box
+                                    .results__img(style="background-image: url(images/results-4.png)")
+                                    h4.results__title SLEEP BETTER
+                                    p.results__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+                            .results__item
+                                .results__box
+                                    .results__img(style="background-image: url(images/results-5.png)")
+                                    h4.results__title WEIGHT LOSS
+                                    p.results__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+                            .results__item
+                                .results__box
+                                    .results__img(style="background-image: url(images/results-6.png)")
+                                    h4.results__title STRENGTHENS YOUR BONES
+                                    p.results__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+                            .results__item
+                                .results__box
+                                    .results__img(style="background-image: url(images/results-7.png)")
+                                    h4.results__title INCREASED FLEXIBILITY
+                                    p.results__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+                            .results__item
+                                .results__box
+                                    .results__img(style="background-image: url(images/results-8.png)")
+                                    h4.results__title LOWER BLOOD PRESSURE
+                                    p.results__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+                section.price(style="background-image: url(images/price-bg.jpg)")
+                    .container
+                        .price__inner
+                            .price__item
+                                .price__box
+                                    .price__sum
+                                        span.price__money $
+                                        span.price__value 49
+                                        span.price__period month
+                                    ul.price__list
+                                        li.price__info Entry date: mon - fri
+                                        li.price__info Entry time: 8a.m - 8p.m
+                                        li.price__info Nutrition advicer: no
+                                    a.price__btn(href="#") Buy now
+                            .price__item
+                                .price__box
+                                    .price__sum
+                                        span.price__money $
+                                        span.price__value 69
+                                        span.price__period month
+                                    ul.price__list
+                                        li.price__info Entry date: mon - fri
+                                        li.price__info Entry time: 8a.m - 8p.m
+                                        li.price__info Nutrition advicer: yes
+                                    a.price__btn(href="#") Buy now
+                            .price__item
+                                .price__box
+                                    .price__sum
+                                        span.price__money $
+                                        span.price__value 99
+                                        span.price__period month
+                                    ul.price__list
+                                        li.price__info Entry date: mon - fri
+                                        li.price__info Entry time: 8a.m - 8p.m
+                                        li.price__info Nutrition advicer: yes
+                                    a.price__btn(href="#") Buy now
+            footer.footer
+                .container
+                    .footer__inner
+                        .footer__about
+                            h4.footer__title About
+                            p.footer__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad m inim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+                        .footer__contacts
+                            h4.footer__title CONTACT US
+                            .footer__box.icon-location2
+                                a.footer__box-link(href="https://goo.gl/maps/roox3Bvop9WkaAGv7" target="_blank") 5419 Joseph Mountains Apt. 716
+                            .footer__box.icon-envelop
+                                a.footer__box-link(href="mailto:joga.info@example.com") joga.info@example.com
+                            .footer__box.icon-phone
+                                a.footer__box-link(href="tel:+123456789") +1 234 567 89
+                                a.footer__box-link(href="tel:+123467890") +1 234 678 90
+                            .footer__box.icon-dribbble
+                                a.footer__box-link(href="mailto:www.example.com") www.example.com
+                        .footer__social
+                            a.footer__social-link(href="#")
+                                span.footer__icon.icon-linkedin
+                            a.footer__social-link(href="#")
+                                span.footer__icon.icon-twitter
+                            a.footer__social-link(href="#")
+                                span.footer__icon.icon-facebook
+                            a.footer__social-link(href="#")
+                                span.footer__icon.icon-google-plus3
+                            a.footer__social-link(href="#")
+                                span.footer__icon.icon-pinterest
+                .footer__copy Copyright  ©  2016-2017 Yoga classes
+
+
+
+
+        script(src="js/lib.min.js")
+        script(src="js/main.js")

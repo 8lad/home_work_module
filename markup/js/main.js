@@ -1,0 +1,1 @@
+"use strict";window.addEventListener("DOMContentLoaded",()=>{new Swiper(".swiper-container",{direction:"horizontal",loop:!0,autoHeight:!0,centeredSlides:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}})});
